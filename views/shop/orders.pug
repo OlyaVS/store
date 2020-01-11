@@ -2,4 +2,13 @@ extends ../layouts/main-layout
 
 block content
     main
-        h1 Nothing there
+        if orders.length <= 0
+            h1 No orders placed yet
+        else
+            ul
+                each order in orders
+                    li
+                        h1 Order number #{order.id}
+                        ul
+                            each item in order.products
+                                li #{item.title} #{item.orderItem.quantity}
