@@ -8,11 +8,11 @@ block content
             ul(class="cart__item-list")
                 each product in products
                     li(class="cart__item")
-                        p(class="title") #{product.title}
+                        p(class="title") #{product.productId.title}
                         p(class="quantity") Quantity: #{product.quantity}
                         form(action="/cart-delete-product", method="POST", class="button")
                             button.btn(type="submit") Delete
-                            input(type="hidden", name="productId" value=product._id)
+                            input(type="hidden", name="productId" value=product.productId._id)
             hr
             div.centered
                 form(action="/create-order", method="POST")

@@ -12,5 +12,5 @@ block content
                     li(class="orders_item")
                         h1 Order - № #{order._id}
                         ol(class="orders_products")
-                            each item in order.items
-                                li(class="orders_products-item") #{item.title} #{item.quantity}
+                            each item in order.products
+                                li(class="orders_products-item") #{item.product.title} #{item.quantity}
