@@ -1,0 +1,30 @@
+.cart__item-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart__item {
+  display: inline-flex;
+  width: 700px;
+  margin-bottom: 30px;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid deeppink;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px 5px gainsboro;
+}
+
+.title {
+  width: 400px;
+  margin-right: 20px;
+}
+
+.quantity {
+  width: 200px;
+  margin-right: 20px;
+}
+
+.button {
+  border-radius: 6px;
+}

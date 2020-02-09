@@ -1,14 +1,16 @@
 extends ../layouts/main-layout
+block styles
+    link(rel="stylesheet", href="/css/order.css")
 
 block content
     main
         if orders.length <= 0
             h1 No orders placed yet
         else
-            ul
+            ul(class="orders")
                 each order in orders
-                    li
-                        h1 Order number #{order.id}
-                        ul
-                            each item in order.products
-                                li #{item.title} #{item.orderItem.quantity}
+                    li(class="orders_item")
+                        h1 Order - № #{order._id}
+                        ol(class="orders_products")
+                            each item in order.items
+                                li(class="orders_products-item") #{item.title} #{item.quantity}

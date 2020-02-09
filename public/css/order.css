@@ -1,0 +1,27 @@
+.orders {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.orders_item {
+  padding: 10px;
+  margin-bottom: 30px;
+  border: 2px solid purple;
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px 5px gainsboro;
+}
+
+.orders_item h1 {
+  margin: 0;
+}
+
+.orders_products {
+  display: flex;
+  flex-direction: column;
+  list-style: decimal;
+}
+
+.orders_products-item {
+  display: inline-flex;
+}
